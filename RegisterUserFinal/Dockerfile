@@ -21,7 +21,7 @@ FROM openjdk:21-slim
 WORKDIR /app
 
 #Copiar o JAR construído na etapa anterior
-COPY --from=target /target/RegisterUserFinal-1.jar app.jar
+COPY --from=target /target/RegisterUserFinal.jar app.jar
 
 #Definir a porta que será utilizada na aplicação
 EXPOSE 8188
